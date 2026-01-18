@@ -1,26 +1,26 @@
-# Option 2: Docker Deployment
+### Option 2: Docker Deployment
 
 bash# Build and run with Docker Compose
 docker-compose up -d
 
-# View logs
+#### View logs
 docker-compose logs -f
 
-# Stop
+#### Stop
 docker-compose down
 ```
 
 ---
 
-### **API Endpoints**
+#### **API Endpoints**
 
-### **1. Health Check**
+#### **1. Health Check**
 ```
 GET /health
 Response: {"status": "healthy", "service": "AudEX"}
 ```
 
-### **2. Transcribe Audio/Video**
+#### **2. Transcribe Audio/Video**
 ```
 POST /api/transcribe
 Content-Type: multipart/form-data
@@ -35,7 +35,7 @@ Response:
 }
 ```
 
-### **3. Export Transcription**
+#### **3. Export Transcription**
 ```
 POST /api/export
 Content-Type: application/json
@@ -47,7 +47,7 @@ Body: {
 Response: File download
 ```
 
-### **4. Get Supported Formats**
+#### **4. Get Supported Formats**
 ```
 GET /api/formats
 Response: {
@@ -59,7 +59,7 @@ Response: {
 
 ---
 
-## **Features**
+### **Features**
 
 ✅ **Drag & Drop Interface** - Intuitive file upload  
 ✅ **Multi-Format Support** - Audio (MP3, WAV, M4A, FLAC, OGG) & Video (MP4, AVI, MOV, MKV)  
@@ -72,7 +72,7 @@ Response: {
 
 ---
 
-## **Production Considerations**
+#### **Production Considerations**
 
 1. **Performance Optimization:**
    - Use `base` or `small` Whisper model for faster processing
@@ -98,7 +98,7 @@ Response: {
 
 ---
 
-## **Environment Variables**
+#### **Environment Variables**
 
 Create a `.env` file:
 ```
