@@ -75,7 +75,7 @@ User selects export format (TXT/DOCX/PDF)
 Backend generates formatted document
 File sent as downloadable attachment
 
-## Dependencies
+# Dependencies
 
 * Python 3.12
 
