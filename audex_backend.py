@@ -9,7 +9,7 @@ import tempfile
 from docx import Document
 from fpdf import FPDF
 import uuid
-from moviepy.editor import VideoFileClip
+from moviepy import VideoFileClip
 import logging
 
 # Initialize Flask app
@@ -226,3 +226,4 @@ def get_supported_formats():
 
 if __name__ == '__main__':
     app.run(debug=False, host='0.0.0.0', port=5000, threaded=True)
+
