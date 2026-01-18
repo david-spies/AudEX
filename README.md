@@ -5,13 +5,13 @@ A production-ready audio-to-text transcription application with a modern web int
 
 Tech Stack
 
-Frontend:
+### Frontend:
 
 React with Tailwind CSS for modern, responsive UI
 Lucide React for icons
 Drag-and-drop file upload support
 
-## Backend:
+### Backend:
 
 Flask - Python web framework
 OpenAI Whisper - State-of-the-art speech recognition
@@ -20,7 +20,7 @@ python-docx - DOCX file generation
 FPDF - PDF file generation
 Gunicorn - Production WSGI server
 
-## Infrastructure:
+### Infrastructure:
 
 Docker & Docker Compose for containerization
 FFmpeg for audio/video processing
@@ -35,21 +35,21 @@ Frontend validates file type against supported formats
 File sent to backend via multipart/form-data POST request
 
 
-## Backend Processing
+### Backend Processing
 
 Flask receives file and generates unique UUID
 Saves file securely to uploads directory
 Validates file extension
 
 
-## Audio Extraction (for video files)
+### Audio Extraction (for video files)
 
 If video file detected, MoviePy extracts audio track
 Converts to WAV format for optimal processing
 Temporary audio file created
 
 
-## Whisper Transcription
+### Whisper Transcription
 
 Whisper model loads audio file
 Uses deep learning neural network trained on 680,000 hours of multilingual data
@@ -62,20 +62,20 @@ Detected language
 Confidence scores
 
 
-## Post-Processing
+### Post-Processing
 
 Cleans up temporary files
 Returns JSON response with transcription
 Frontend displays results in real-time
 
 
-## Export Generation
+### Export Generation
 
 User selects export format (TXT/DOCX/PDF)
 Backend generates formatted document
 File sent as downloadable attachment
 
-## Dependencies
+### Dependencies
 
 * Python 3.12
 
