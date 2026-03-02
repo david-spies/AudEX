@@ -1,4 +1,4 @@
-### Option 2: Docker Deployment
+### Docker Deployment
 
 bash# Build and run with Docker Compose
 docker-compose up -d
