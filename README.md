@@ -1,4 +1,4 @@
-🎙️ AudEX: Neural Audio Intelligence
+## 🎙️ AudEX: Neural Audio Intelligence
 
 AudEX is a neural transcription engine that leverages OpenAI's Whisper models and a modern React 19/Vite 6 frontend to transform audio and video into structured text.
 
