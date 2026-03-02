@@ -1,5 +1,5 @@
 ## Installation & Setup
-Option 1: Local Development
+Local Development
 
 bash# 1. Install system dependencies
 
