@@ -1,0 +1,22 @@
+# Core Backend
+flask
+flask-cors
+werkzeug
+axios-python-compat
+python-dotenv
+
+# AI Engines
+faster-whisper>=1.0.0
+pyannote.audio>=3.1.0
+torch>=2.1.0
+torchvision
+torchaudio
+
+# Audio Processing
+ffmpeg-python
+numpy<2.0.0
+huggingface_hub
+
+# Export Utilities
+python-docx
+reportlab
