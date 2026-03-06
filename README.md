@@ -1,3 +1,5 @@
+<img width="1280" height="632" alt="AudEX - Transcriber" src="https://github.com/user-attachments/assets/aadeffd2-4d2e-4b43-aff7-765f2e4b2d1d" />
+
 ## 🎙️ AudEX: Neural Audio Intelligence
 
 AudEX is a neural transcription engine that leverages OpenAI's Whisper models and a modern React 19/Vite 6 frontend to transform audio and video into structured text.
