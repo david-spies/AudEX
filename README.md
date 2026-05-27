@@ -1,4 +1,4 @@
-[![AudEX - Professional Audio to Text Transcription](docs/banner.svg)]
+![AudEX - Professional Audio to Text Transcription](docs/banner.svg)
 
 # 🎵 AudEX - Professional Audio to Text Transcription
 
