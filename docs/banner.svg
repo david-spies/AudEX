@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0d4ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Animations -->
+    <style>
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+      }
+      
+      @keyframes wave {
+        0% { d: path('M 0,100 Q 25,80 50,100 T 100,100'); }
+        25% { d: path('M 0,100 Q 25,70 50,100 T 100,100'); }
+        50% { d: path('M 0,100 Q 25,80 50,100 T 100,100'); }
+        75% { d: path('M 0,100 Q 25,90 50,100 T 100,100'); }
+        100% { d: path('M 0,100 Q 25,80 50,100 T 100,100'); }
+      }
+      
+      @keyframes pulse {
+        0%, 100% { r: 8; opacity: 1; }
+        50% { r: 12; opacity: 0.5; }
+      }
+      
+      @keyframes slideIn {
+        from { transform: translateX(-50px); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+      
+      @keyframes glow {
+        0%, 100% { filter: drop-shadow(0 0 5px rgba(255,255,255,0.3)); }
+        50% { filter: drop-shadow(0 0 20px rgba(167,139,250,0.8)); }
+      }
+      
+      @keyframes barWave1 {
+        0%, 100% { height: 30px; }
+        25% { height: 60px; }
+        50% { height: 40px; }
+        75% { height: 50px; }
+      }
+      
+      @keyframes barWave2 {
+        0%, 100% { height: 40px; }
+        25% { height: 35px; }
+        50% { height: 65px; }
+        75% { height: 45px; }
+      }
+      
+      @keyframes barWave3 {
+        0%, 100% { height: 50px; }
+        25% { height: 50px; }
+        50% { height: 30px; }
+        75% { height: 60px; }
+      }
+      
+      @keyframes barWave4 {
+        0%, 100% { height: 45px; }
+        25% { height: 55px; }
+        50% { height: 50px; }
+        75% { height: 35px; }
+      }
+      
+      @keyframes barWave5 {
+        0%, 100% { height: 35px; }
+        25% { height: 40px; }
+        50% { height: 60px; }
+        75% { height: 50px; }
+      }
+      
+      @keyframes barWave6 {
+        0%, 100% { height: 55px; }
+        25% { height: 45px; }
+        50% { height: 35px; }
+        75% { height: 55px; }
+      }
+      
+      .float-animation { animation: float 3s ease-in-out infinite; }
+      .pulse-animation { animation: pulse 2s ease-in-out infinite; }
+      .slide-in { animation: slideIn 0.8s ease-out forwards; }
+      .glow-animation { animation: glow 2.5s ease-in-out infinite; }
+      
+      .bar-1 { animation: barWave1 1.5s ease-in-out infinite; }
+      .bar-2 { animation: barWave2 1.5s ease-in-out infinite 0.1s; }
+      .bar-3 { animation: barWave3 1.5s ease-in-out infinite 0.2s; }
+      .bar-4 { animation: barWave4 1.5s ease-in-out infinite 0.3s; }
+      .bar-5 { animation: barWave5 1.5s ease-in-out infinite 0.4s; }
+      .bar-6 { animation: barWave6 1.5s ease-in-out infinite 0.5s; }
+      
+      .text-title {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        font-size: 72px;
+        font-weight: 900;
+        fill: url(#textGradient);
+        letter-spacing: -2px;
+      }
+      
+      .text-subtitle {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        font-size: 24px;
+        fill: rgba(255, 255, 255, 0.9);
+        letter-spacing: 1px;
+      }
+      
+      .text-accent {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        font-size: 16px;
+        fill: url(#accentGradient);
+        font-weight: 600;
+        letter-spacing: 2px;
+      }
+    </style>
+  </defs>
+  
+  <!-- Animated background circles (subtle) -->
+  <circle cx="100" cy="80" r="120" fill="rgba(255,255,255,0.05)" style="animation: float 6s ease-in-out infinite;"/>
+  <circle cx="1100" cy="320" r="150" fill="rgba(255,255,255,0.03)" style="animation: float 8s ease-in-out infinite 1s;"/>
+  
+  <!-- Left side: Animated Audio Waveform Icon -->
+  <g class="glow-animation" style="transform-origin: 140px 200px;">
+    <!-- Microphone body background circle -->
+    <circle cx="140" cy="200" r="85" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+    
+    <!-- Animated waveform bars -->
+    <rect x="105" y="185" width="8" height="30" rx="4" fill="url(#accentGradient)" class="bar-1"/>
+    <rect x="120" y="175" width="8" height="50" rx="4" fill="url(#accentGradient)" class="bar-2"/>
+    <rect x="135" y="165" width="8" height="70" rx="4" fill="url(#accentGradient)" class="bar-3"/>
+    <rect x="150" y="160" width="8" height="80" rx="4" fill="url(#accentGradient)" class="bar-4"/>
+    <rect x="165" y="165" width="8" height="70" rx="4" fill="url(#accentGradient)" class="bar-5"/>
+    <rect x="180" y="175" width="8" height="50" rx="4" fill="url(#accentGradient)" class="bar-6"/>
+    
+    <!-- Microphone capsule -->
+    <ellipse cx="140" cy="220" rx="14" ry="22" fill="url(#accentGradient)"/>
+    
+    <!-- Microphone stand -->
+    <rect x="137" y="240" width="6" height="25" rx="3" fill="rgba(255,255,255,0.9)"/>
+    
+    <!-- Microphone base -->
+    <rect x="120" y="263" width="40" height="6" rx="3" fill="rgba(255,255,255,0.9)"/>
+    
+    <!-- Animated pulse circle -->
+    <circle cx="140" cy="200" r="8" fill="none" stroke="url(#accentGradient)" stroke-width="2" class="pulse-animation"/>
+  </g>
+  
+  <!-- Center: Text and decorative elements -->
+  <g class="slide-in">
+    <!-- Main title -->
+    <text x="300" y="140" class="text-title">AudEX</text>
+    
+    <!-- Animated underline -->
+    <rect x="300" y="155" width="0" height="4" rx="2" fill="url(#accentGradient)" style="animation: slideIn 1s ease-out 0.3s forwards; animation-fill-mode: forwards; width: 280px;"/>
+    
+    <!-- Subtitle -->
+    <text x="300" y="200" class="text-subtitle">Audio to Text Transcription</text>
+    
+    <!-- Accent line with badge -->
+    <text x="300" y="245" class="text-accent">⚡ POWERED BY AI</text>
+    
+    <!-- Feature dots with animation -->
+    <g style="animation: slideIn 1s ease-out 0.5s forwards; opacity: 0;">
+      <circle cx="318" cy="280" r="3" fill="url(#accentGradient)"/>
+      <text x="335" y="285" font-family="Arial" font-size="14" fill="rgba(255,255,255,0.85)">Speech Recognition</text>
+      
+      <circle cx="318" cy="310" r="3" fill="url(#accentGradient)"/>
+      <text x="335" y="315" font-family="Arial" font-size="14" fill="rgba(255,255,255,0.85)">Multi-Format Export</text>
+      
+      <circle cx="318" cy="340" r="3" fill="url(#accentGradient)"/>
+      <text x="335" y="345" font-family="Arial" font-size="14" fill="rgba(255,255,255,0.85)">99+ Languages</text>
+    </g>
+  </g>
+  
+  <!-- Right side: Decorative animated elements -->
+  <g style="animation: float 4s ease-in-out infinite 0.5s;">
+    <!-- Code/Tech indicator -->
+    <rect x="850" y="100" width="300" height="250" rx="12" fill="rgba(255,255,255,0.08)" stroke="url(#accentGradient)" stroke-width="2"/>
+    
+    <!-- Animated dots (network style) -->
+    <circle cx="900" cy="130" r="4" fill="url(#accentGradient)" class="pulse-animation"/>
+    <circle cx="960" cy="130" r="4" fill="url(#accentGradient)" class="pulse-animation" style="animation-delay: 0.3s;"/>
+    <circle cx="1020" cy="130" r="4" fill="url(#accentGradient)" class="pulse-animation" style="animation-delay: 0.6s;"/>
+    
+    <!-- Connecting lines (animated) -->
+    <line x1="904" y1="134" x2="956" y2="134" stroke="url(#accentGradient)" stroke-width="1" opacity="0.5" stroke-dasharray="50" style="animation: slideIn 1.5s ease-in-out infinite; stroke-dashoffset: 50;"/>
+    <line x1="964" y1="134" x2="1016" y2="134" stroke="url(#accentGradient)" stroke-width="1" opacity="0.5" stroke-dasharray="50" style="animation: slideIn 1.5s ease-in-out 0.3s infinite; stroke-dashoffset: 50;"/>
+    
+    <!-- Feature icons in right box -->
+    <g style="animation: slideIn 1s ease-out 0.2s forwards; opacity: 0;">
+      <!-- Flask icon (backend) -->
+      <text x="890" y="175" font-family="Arial" font-size="28" fill="url(#accentGradient)">🐍</text>
+      <text x="920" y="180" font-family="Arial" font-size="12" fill="rgba(255,255,255,0.8)">Flask</text>
+      
+      <!-- React icon (frontend) -->
+      <text x="1000" y="175" font-family="Arial" font-size="28" fill="url(#accentGradient)">⚛️</text>
+      <text x="1010" y="180" font-family="Arial" font-size="12" fill="rgba(255,255,255,0.8)">React</text>
+      
+      <!-- Whisper icon (AI) -->
+      <text x="945" y="235" font-family="Arial" font-size="28" fill="url(#accentGradient)">🤖</text>
+      <text x="935" y="255" font-family="Arial" font-size="12" fill="rgba(255,255,255,0.8)">Whisper AI</text>
+    </g>
+  </g>
+  
+  <!-- Bottom badge -->
+  <g style="animation: slideIn 1s ease-out 0.6s forwards; opacity: 0;">
+    <rect x="400" y="360" width="400" height="28" rx="14" fill="rgba(255,255,255,0.15)" stroke="url(#accentGradient)" stroke-width="1.5"/>
+    <text x="600" y="381" font-family="Arial" font-size="13" fill="rgba(255,255,255,0.9)" text-anchor="middle" font-weight="600">⭐ Production Ready • Open Source • MIT License</text>
+  </g>
+</svg>
